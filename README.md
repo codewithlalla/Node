@@ -42,8 +42,20 @@ Whether you're just starting with Node.js or aiming to master backend developmen
 | 19   | Building a Full REST API Project             | Coming Soon   | _TBA_           | `/0019-full-rest-api-project`    |
 | 20   | Building a Realtime Chat App with Socket.io  | Coming Soon   | _TBA_           | `/0020-realtime-chat`            |
 
----
 
-> This README and the table will be updated as videos and code are published. Bookmark ⭐ and star the repo to stay updated!
+This README and the table will be updated as videos and code are published. Bookmark and star the repo to stay updated! ⭐
 
----
+🔗 Stay Connected
+📺 YouTube: Code with Lalla
+📧 Email: codewithlalla@gmail.com
+🌐 Portfolio: Coming Soon
+🤝 Contribute
+Have suggestions or want to request a specific Node topic? Feel free to open an issue or drop a comment on any YouTube video!
+
+📜 License
+This project is licensed under the MIT License. Use freely with credit to Code with Lalla.
+
+Happy coding! 🚀
+— Lalla
+
+
