@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
-const { log } = require('../utils/logger')
+const { Log } = require('../utils/logger')
 
 const connectDB = async()=>{
     try {
         await mongoose.connect(process.env.MONGO_DB_URL)
-        log(`MongoDb connected`)
+        Log(`MongoDb connected`)
     } catch (error) {
-        log(`MongoDB connection error: ${error}`)
+        Log(`MongoDB connection error: ${error}`)
         process.exit(1)
     }
 }
