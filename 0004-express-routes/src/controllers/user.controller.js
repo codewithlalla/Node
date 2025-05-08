@@ -1,4 +1,4 @@
-const {getAllUsers, addUser} = require('../services/user.service');
+const {getAllUsers, addUser, deleteUserById} = require('../services/user.service');
 const { Log } = require('../utils/logger');
 
 
@@ -24,4 +24,17 @@ const createUser = async(req, res, next)=>{
     }
 }
 
-module.exports = {getUsers, createUser}
+const deleteUser = async(req, res, next)=>{
+    try {
+        const {userId} = req.params
+        Log('call deleteUser controller',userId)
+        const deletedUser = await deleteUserById(userId)
+        res.json(deletedUser)
+        
+    } catch (error) {
+        Log(error)
+        next(error)
+    }
+}
+
+module.exports = {getUsers, createUser, deleteUser}

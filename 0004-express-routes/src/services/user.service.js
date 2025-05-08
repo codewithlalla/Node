@@ -18,4 +18,15 @@ const addUser  = async(data)=>{
     }
 }
 
-module.exports = {getAllUsers, addUser}
+const deleteUserById = async(id)=>{
+    try {
+        Log('call deleteUserById',id)
+        return await User.findByIdAndDelete(id)
+        
+    } catch (error) {
+        Log(error)
+        process.exit(1)
+    }
+}
+
+module.exports = {getAllUsers, addUser, deleteUserById}
